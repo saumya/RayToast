@@ -13,6 +13,8 @@ import android.view.WindowManager;
 import android.widget.Toast;
 import android.util.Log;
 
+import java.lang.String;
+
 
 /* 
 	You can use the Android Extension class in order to hook
@@ -48,20 +50,21 @@ public class RayToast extends Extension {
 		Extension.callbackHandler.post(new Runnable() {
 			@Override public void run() {
 
-				Log.d("INFO","RayToast.testToast");
+				//Log.d("INFO","RayToast.testToast");
 				Toast.makeText(Extension.mainContext, "testToast", 5000).show();
 			
 			}
 		});
 
 	}
-	public static void toastWithMessage (int IdVal) {
-		
+	public static void toastWithMessage (String message) {
+		final String s = message;
+
 		Extension.callbackHandler.post(new Runnable() {
 			@Override public void run() {
 
-				Log.d("INFO","RayToast.toastWithMessage");
-				Toast.makeText(Extension.mainContext, "toastWithMessage", 5000).show();
+				//Log.d("INFO","RayToast.toastWithMessage");
+				Toast.makeText(Extension.mainContext, s, 5000).show();
 			
 			}
 		});
