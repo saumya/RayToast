@@ -48,12 +48,24 @@ public class RayToast extends Extension {
 		Extension.callbackHandler.post(new Runnable() {
 			@Override public void run() {
 
-				Log.d("INFO","testToast is called from SetBrightness.java");
+				Log.d("INFO","RayToast.testToast");
 				Toast.makeText(Extension.mainContext, "testToast", 5000).show();
 			
 			}
 		});
 
+	}
+	public static void toastWithMessage (int IdVal) {
+		
+		Extension.callbackHandler.post(new Runnable() {
+			@Override public void run() {
+
+				Log.d("INFO","RayToast.toastWithMessage");
+				Toast.makeText(Extension.mainContext, "toastWithMessage", 5000).show();
+			
+			}
+		});
+		
 	}
 	
 	
