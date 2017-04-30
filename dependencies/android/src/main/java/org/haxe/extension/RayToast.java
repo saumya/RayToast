@@ -9,6 +9,10 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 
+import android.view.WindowManager;
+import android.widget.Toast;
+import android.util.Log;
+
 
 /* 
 	You can use the Android Extension class in order to hook
@@ -39,10 +43,17 @@ import android.view.View;
 public class RayToast extends Extension {
 	
 	
-	public static int sampleMethod (int inputValue) {
+	public static void testToast () {
 		
-		return inputValue * 100;
-		
+		Extension.callbackHandler.post(new Runnable() {
+			@Override public void run() {
+
+				Log.d("INFO","testToast is called from SetBrightness.java");
+				Toast.makeText(Extension.mainContext, "testToast", 5000).show();
+			
+			}
+		});
+
 	}
 	
 	
