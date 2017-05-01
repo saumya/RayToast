@@ -4,6 +4,11 @@ RayToast
  An [OpenFL][1] Android extension to display Toast Messages. 
  Here is a [reference tutorial][2]. Done with **OpenFL 4.9.2**.
 
+Available Methods
+ - `testToast()Void` : Display a toast
+ - `toastMessage(message:String):Void` : Display a toast with a message that we provide as an arguement
+ - `sendAndGetBackMessage(message:String):String` : Displays a toast with our message and gets a default returned string, just to make sure the return value can be integrated
+
 Making an extension
  - Create
 ```
