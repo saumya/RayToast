@@ -9,7 +9,8 @@ Available Methods
  - `toastMessage(message:String):Void` : Display a toast with a message that we provide as an arguement
  - `sendAndGetBackMessage(message:String):String` : Displays a toast with our message and gets a default returned string, just to make sure the return value can be integrated
 
-Making an extension
+### Making an extension
+
  - Create
 ```
 lime create extension MyExtension
