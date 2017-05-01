@@ -15,4 +15,9 @@ class RayToast {
 	}
 	private static var toast_message_JNI = JNI.createStaticMethod("org.haxe.extension.RayToast", "toastWithMessage", "(Ljava/lang/String;)V" );
 
+	public static function sendAndGetBackMessage(message:String):String{
+		return toast_to_back_message_JNI(message);
+	}
+	private static var toast_to_back_message_JNI = JNI.createStaticMethod("org.haxe.extension.RayToast", "toastWithMessageBack", "(Ljava/lang/String;)Ljava/lang/String;" );
+
 }

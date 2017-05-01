@@ -70,6 +70,20 @@ public class RayToast extends Extension {
 		});
 		
 	}
+	public static String toastWithMessageBack (String message) {
+		final String s = message;
+
+		Extension.callbackHandler.post(new Runnable() {
+			@Override public void run() {
+
+				//Log.d("INFO","RayToast.toastWithMessageBack");
+				Toast.makeText(Extension.mainContext, s, 5000).show();
+			
+			}
+		});
+		
+		return "JAVA: Hello";
+	}
 	
 	
 	/**
