@@ -35,7 +35,7 @@ var returnedString:String = RayToast.sendAndGetBackMessage( "Hello from OpenFL :
 
  - The JNI [short code reference][3]
  - change `build.gradle` to have `classpath 'com.android.tools.build:gradle:::ANDROID_GRADLE_PLUGIN::'`
-  -- it looks as
+   - it looks as
    ```
    dependencies {
 		classpath 'com.android.tools.build:gradle:::ANDROID_GRADLE_PLUGIN::'
