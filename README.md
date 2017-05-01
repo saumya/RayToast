@@ -18,6 +18,13 @@ lime rebuild MyExtension android
 <include path="../../path/to/extensions/MyExtension" />
 ```
 
+### Using the extension
+
+Simply call the static methods from the OpenFL project.
+```
+var returnedString:String = RayToast.sendAndGetBackMessage( "Hello from OpenFL : " + Date.now() );
+```
+
 ### Notes
 
 The JNI [short code reference][3]
