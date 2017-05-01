@@ -2,7 +2,7 @@ RayToast
 ==============
 
  An [OpenFL][1] Android extension to display Toast Messages. 
- Here is a [reference tutorial][2].
+ Here is a [reference tutorial][2]. Done with _OpenFL 4.9.2_.
 
 Making an extension
  - Create
